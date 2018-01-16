@@ -17,7 +17,7 @@
 
 #include <ESPAsyncWebServer.h>
 
-const gpio_num_t pinLED = GPIO_NUM_2;
+const gpio_num_t internalLED = GPIO_NUM_2;
 
 // Internal network I (192.168.0.0/24)
 const std::string ssid{ "MikeMitterer-LS" };
@@ -27,7 +27,7 @@ void setup() {
     Serial.begin(115200);
 
     // initialize digital pin LED_BUILTIN as an output.
-    pinMode(pinLED, OUTPUT);
+    pinMode(internalLED, OUTPUT);
 
     Serial.println("Booting");
     WiFi.mode(WIFI_STA);

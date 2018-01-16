@@ -5,7 +5,7 @@ include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
 
 add_executable(${PROJECT_NAME}
 
-        basic_tests/basic_check_ma.cpp
+        basic_tests/hello_basic.cpp
         )
 
 target_link_libraries(${PROJECT_NAME} gtest gtest_main)
