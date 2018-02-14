@@ -17,7 +17,11 @@
 
 #include <ESPAsyncWebServer.h>
 
-const gpio_num_t internalLED = GPIO_NUM_2;
+#ifdef BOARD_LOLIN32PRO
+    const gpio_num_t internalLED = GPIO_NUM_5;
+#else
+    const gpio_num_t internalLED = GPIO_NUM_2;
+#endif
 
 // Internal network I (192.168.0.0/24)
 const std::string ssid{ "MikeMitterer-LS" };

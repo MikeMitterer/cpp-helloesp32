@@ -6,3 +6,5 @@ CMakeListsPrivate.txt
 bin
 cmake-build-debug
 lib
+.travis.yml
+CMakeLists.works.txt
